@@ -1,0 +1,25 @@
+.main{
+	background-color: #D3B3AD  ;
+	padding:2%;
+	display:flex;
+
+}
+.left{
+	margin:2%;
+	background:linear-gradient(white,#E9BA25  );
+	padding-left: 1%;
+	padding-bottom: 1%;
+	padding-top:1%;
+	text-align: center;
+	width:25%;
+	border-radius:3%;
+}
+img{
+	width:90%;
+	height:45%;
+}
+.right{
+	background:linear-gradient(to right,#78BBB9  ,#B0E3E0  );
+	width:70%;
+	padding:1%;
+}

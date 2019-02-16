@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::resume builber::</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body id ="form">
+	<div class="main">
+		<div class="sub">
+			<h2>carrer odjective</h2>
+			<select name="career " id="career">
+				<option>select the carrer objective</option>
+				<option>select in good company</option>
+				<option>get the high salary</option>
+				<option>i wanted to bulid my own company</option>
+			</select>
+		</div>
+		<div class="sub1">
+			<h1>personal details</h1>
+			<input type="text" name="name" id="name" placeholder="enter the name"><br>
+			<input type="text" name="address1" id="address1" placeholder="enter strret name"><br>
+			<input type="text" name="address2" id="address2" placeholder="enter city"><br>
+			<input type="number" name="number" id="number" placeholder="enter phone number"><br>
+			<input type="email" name="email" id="email" placeholder="enter the email"><br>
+
+		</div>
+		<div class="sub1">
+			<h1> postgraduation</h1>
+			<select name="PGDegree " id="PGDegree">
+				<option>select your degree</option>
+				<option>m.tech</option>
+				<option>m.com</option>
+				<option>mba</option>
+				<option>mca</option>
+				<option>md</option>
+			</select><br>
+			<input type="text" name="colg" id="colg" placeholder="enter the name of your instiute"><br>
+			<input type="text" name="colg1" id="colg1" placeholder="enter place of yourcollege"><br>
+			<input type="text" name="per" id="per" placeholder="enter the percentage"><br>
+			<input type="number" name="phon" id="phon" placeholder="enter phone number"><br>
+			<input type="email" name="pso" id="pso" placeholder="enter the passed out yEAR"><br>   </div>
+		<div class="sub1">
+			<h1> undergraduation</h1>
+			<select name="PGDegree " id="PGDegree">
+				<option>select your degree</option>
+				<option>b.tech</option>
+				<option>b.com</option>
+				<option>bba</option>
+				<option>bbm</option>
+				<option>b.sc</option>
+			</select><br>
+			<input type="text" name="UGcolg" id="UGcolg" placeholder="enter the name of your instiute"><br>
+			<input type="text" name="UGcolg1" id="UGcolg1" placeholder="enter place of yourcollege"><br>
+			<input type="text" name="UGper" id="UGper" placeholder="enter the percentage"><br>
+			<input type="number" name="phon1" id="phon1" placeholder="enter phone number"><br>
+			<input type="email" name="pso1" id="pso1" placeholder="enter the passed out yEAR"><br>   </div>
+			
+	
+		<div class="sub1">
+			<h1> intermediate</h1>
+			<select name="inter " id="inter">
+				<option>select your group</option>
+				<option>mpc</option>
+				<option>bipc</option>
+				<option>mec</option>
+				<option>cec</option>
+			</select><br>
+			<input type="text" name="incolg" id="incolg" placeholder="enter the name of your instiute"><br>
+			<input type="text" name="incolg1" id="incolg1" placeholder="enter place of yourcollege"><br>
+			<input type="text" name="inper" id="inper" placeholder="enter the percentage"><br>
+			<input type="number" name="phon2" id="phon2" placeholder="enter phone number"><br>
+			<input type="email" name="pso2" id="pso2" placeholder="enter the passed out yEAR"><br>  
+			
+		</div>
+		<div class="sub1">
+				<h1> school</h1>
+			<select name="ssc " id="ssc">
+				<option>select your ssc details</option>
+				<option>ssc</option>
+				<option>cbse</option>
+				<option>icse</option>
+			</select><br>
+			<input type="text" name="sscname" id="sscname" placeholder="enter the name of your instiute"><br>
+			<input type="text" name="ssc1" id="ssc1" placeholder="enter place of yourcollege"><br>
+			<input type="text" name="sscper" id="sscper" placeholder="enter the percentage"><br>
+			<input type="number" name="phon3" id="phon3" placeholder="enter phone number"><br>
+			<input type="email" name="pso3" id="pso3" placeholder="enter the passed out yEAR"><br>  
+			
+			
+		</div>
+
+		
+		
+	</div>
+	<button name="button" id="button" onclick="submit()">submit</button>
+
+</body>
+</html>
+<script type="text/javascript">
+	function submit(){
+		var career=document.getElementById("career").value;
+		var name=document.getElementById("name").value;
+		var address1=document.getElementById("address1").value;
+		var address2=document.getElementById("address2").value;
+		var email=document.getElementById("email").value;
+
+		var colg=document.getElementById("colg").value;
+		var colg1=document.getElementById("colg1").value;
+		var per=document.getElementById("per").value;
+		var phon=document.getElementById("phon").value;
+		var pso=document.getElementById("pso").value;
+
+		var UGcolg=document.getElementById("UGcolg").value;
+		var UGcolg1=document.getElementById("UGcolg1").value;
+		var UGper=document.getElementById("UGper").value;
+		var phon1=document.getElementById("phon1").value;
+		var pso1=document.getElementById("pso1").value;
+
+		var incolg=document.getElementById("incolg").value;
+		var incolg1=document.getElementById("incolg1").value;
+		var inper=document.getElementById("inper").value;
+		var phon2=document.getElementById("phon2").value;
+		var pso2=document.getElementById("pso2").value;
+
+		var sscname=document.getElementById("sscname").value;
+		var ssc1=document.getElementById("ssc1").value;
+		var sscper=document.getElementById("sscper").value;
+		var phon3=document.getElementById("phon3").value;
+		var pso3=document.getElementById("pso3").value;
+
+		var indexedDB=window.indexedDB  || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+		indexedDB ? console.log("success") : console.log("fail");
+
+		var open;
+		var result;
+		var store;
+		var tx;
+		 var  request  = indexedDB.open("database",1);
+		 request.onupgradeneeded = function(e){
+		 	open = e.target.result;
+		 	store = open.createObjectStore("resumedata",{keyPath:"name"});
+
+		 }
+		 request.onerror =function(e){
+		 	console.log("error"+e);
+
+		 }
+		 request.onsuccess = function(e){
+		 	open = e.target.result;
+		 	tx = open.transaction("resumedata","readwrite");
+		 	store = tx.objectStore("resumedata");
+		 	store.put({
+		 		car:career,
+		 		name:name,
+		 	     add1:address1,
+		 		 add2:address2,
+		     	//num:number
+		 		 //mail:email
+		 		 education:[
+		 		 {
+		 		 	degree:colg,
+		 		 	inst:colg1,
+		 		 	pre:per,
+		 		 	pho:phon,
+		 		 	yop:pso
+
+		 		 },
+		 		 {
+		 		 	degree:UGcolg,
+		 		 	inst:UGcolg1,
+		 		 	pre:UGper,
+		 		 	pho:phon1,
+		 		 	yop:pso1
+
+		 		 },
+		 		 {
+		 		 	degre:incolg,
+		 		 	inst:incolg1,
+		 		 	pre:inper,
+		 		 	pho:phon2,
+		 		 	yop:pso2
+
+		 		 },
+		 		 {
+		 		 	degree:sscname,
+		 		 	inst:ssc1,
+		 		 	pre:sscper,
+		 		 	pho:phon3,
+		 		 	yop:pso3
+
+		 		 }
+		 		 ]
+		 	})
+		 }
+		 window.open("index.html","_self");
+
+		 }
+
+</script>
